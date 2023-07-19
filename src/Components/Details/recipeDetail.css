@@ -1,0 +1,66 @@
+.photoBanner {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+    box-sizing: border-box;
+    padding: 150px;
+}
+
+.photoBanner h1 {
+    color: white;
+    font-size: 70px;
+}
+
+.detailPage {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+}
+
+.leftSide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    height: 100%;
+    padding: 30px;
+    gap: 20px;
+    border: solid 2px black;
+    margin: 15px;
+    text-align: left;
+}
+
+.leftSide h2 {
+    font-size: 40px;
+}
+
+.leftSide li {
+    font-size: 30px;
+}
+
+.rightSide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+    padding: 60px;
+    gap: 20px;
+    border: solid 2px black;
+    margin: 15px 40px 70px 40px;
+}
+
+.rightSide h2 {
+    font-size: 40px;
+}
+
+.rightSide p {
+    font-size: 25px;
+}

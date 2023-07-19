@@ -1,0 +1,149 @@
+/* ----------------- Header Section CSS -----------------*/
+.navBar {
+    background-color: #d46a35;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0px 50px;
+}
+
+.navBar h2 {
+    font-size: x-large;
+    color: white;
+}
+
+.navBar button {
+    background-color: #d46a35;
+    color: white;
+    font-size: 20px;
+    border: 0;
+    padding: 0px 10px;
+}
+
+.navBar button:hover {
+    background-color: #a85227;
+}
+
+/* ----------------- AdBanner Section CSS -----------------*/
+
+.adBanner {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+    box-sizing: border-box;
+    padding: 150px;
+}
+
+.adBanner h3 {
+    color: white;
+    font-size: xx-large;
+}
+
+.adBanner h1 {
+    color: salmon;
+    font-size: 60px;
+}
+
+.adBanner button {
+    background-color: #4d7f7f;
+    font-size: 20px;
+    border: 0;
+    padding: 15px 20px 15px 20px;
+    color: white;
+}
+
+/* ----------------- Recipe Section CSS -----------------*/
+
+.recipeSection {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+.recipeSection div {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+/* ----------------- RecipeCard Section CSS -----------------*/
+
+.recipeCard {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border: solid 2px black;
+    gap: 30px;
+    box-sizing: border-box;
+    padding: 0px 0px 15px;
+    box-shadow: 3px 3px 5px #000000;
+    border-radius: 1%;
+}
+
+.recipeCard img {
+    width: 300px;
+    height: 380px;
+}
+
+.recipeCard h3 {
+    color: black;
+    font-size: 24px;
+}
+
+.recipeCard button {
+    background-color: #4d7f7f;
+    font-size: 20px;
+    border: 0;
+    padding: 15px 20px 15px 20px;
+    color: white;
+}
+
+/* ----------------- Footer Section CSS -----------------*/
+
+.footerSection {
+    background-color: #343434;
+    width: 100%;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0px 50px;
+}
+
+.footerSection h5 {
+    font-size: 25px;
+    color: white;
+}
+
+.social-media {
+    display: flex;
+    gap: 5px;
+}
+
+.social-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #4d7f7f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
