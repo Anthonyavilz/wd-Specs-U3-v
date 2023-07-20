@@ -26,7 +26,7 @@ const HomeScreen = () => {
     return (
         <div>
             <AdBanner/>
-            <RecipeSection/>
+            <RecipeSection recipes={recipes}/>
         </div>
     )
 }

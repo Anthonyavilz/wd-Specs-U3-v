@@ -35,6 +35,7 @@
     border: solid 2px black;
     margin: 15px;
     text-align: left;
+    box-shadow: 3px 3px 5px #000000;
 }
 
 .leftSide h2 {
@@ -55,6 +56,7 @@
     gap: 20px;
     border: solid 2px black;
     margin: 15px 40px 70px 40px;
+    box-shadow: 3px 3px 5px #000000;
 }
 
 .rightSide h2 {
