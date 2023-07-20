@@ -45,7 +45,7 @@ const NewRecipe = () => {
             <div className="recipeForm">
                 <h1>Tell us your Recipe!</h1>
                 <Formik initialValues={initialValues} onSubmit={onSubmit}>
-                    {({values, handleChange, handleSubmit}) => {
+                    {({values, handleChange, handleSubmit, handleReset}) => {
                         return <form onSubmit={handleSubmit}>
                             <div className='firstRow'>
                                 <input type="text" placeholder="Name" value={values.recipeName} onChange={handleChange} name='recipeName' />
@@ -75,7 +75,7 @@ const NewRecipe = () => {
                                 <textarea placeholder="What are the instructions?" rows={5} value={values.instructions} onChange={handleChange} name='instructions'/>
                             </div>
                             <div className='lastRow'>
-                                <button type='submit'>Submit</button>
+                                <button type='submit' onClick={handleReset}>Submit</button>
                             </div>
                         </form>
                     }}
