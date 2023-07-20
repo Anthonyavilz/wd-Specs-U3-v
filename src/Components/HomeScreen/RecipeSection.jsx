@@ -20,7 +20,7 @@ const RecipeSection = ({recipes}) => {
 
     return (
         <section className="recipeSection">
-            <span>
+            <span className='searchBar'>
             <BiSearchAlt2 size="2em" color="#DA7635" />
             <input
                 type="text"
