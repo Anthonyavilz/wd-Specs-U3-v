@@ -11,6 +11,7 @@ const NewRecipe = () => {
     const [quantity, setQuatity] = useState('')
 
     const addIngredient = () => {
+        console.log('added ingredient')
         setIngredients([...ingredients, {name, quantity}])
         setName('')
         setQuatity('')
@@ -44,12 +45,15 @@ const NewRecipe = () => {
         <div className="formContainer">
             <div className="recipeForm">
                 <h1>Tell us your Recipe!</h1>
-                <Formik initialValues={initialValues} onSubmit={onSubmit}>
+                <Formik initialValues={initialValues} onSubmit={(values, {resetForm}) => {
+                    onSubmit(values)
+                    resetForm()
+                    }}>
                     {({values, handleChange, handleSubmit, handleReset}) => {
                         return <form onSubmit={handleSubmit}>
                             <div className='firstRow'>
                                 <input type="text" placeholder="Name" value={values.recipeName} onChange={handleChange} name='recipeName' />
-                                <input type="text" placeholder="Image URL" value={values.imageURL} onChange={handleChange} name='imageURL' />
+                                <input placeholder="Image URL" value={values.imageURL} onChange={handleChange} name='imageURL' />
                             </div>
                             <div className='secondRow'>
                                 <input type="radio" value='Cook' onChange={handleChange} name='type'/>
@@ -69,13 +73,13 @@ const NewRecipe = () => {
                                 <input type="text" placeholder="Quantity" value={quantity} onChange={(e) => setQuatity(e.target.value)} name='quantity'/>
                             </div>
                             <div className='fifthRow'>
-                                <button type='submit' onClick={addIngredient} >Add Another</button>
+                                <button type='button' onClick={addIngredient} >Add Another</button>
                             </div>
                             <div className='sixthRow'>
                                 <textarea placeholder="What are the instructions?" rows={5} value={values.instructions} onChange={handleChange} name='instructions'/>
                             </div>
                             <div className='lastRow'>
-                                <button type='submit' onClick={handleReset}>Submit</button>
+                                <button type='submit' >Submit</button>
                             </div>
                         </form>
                     }}

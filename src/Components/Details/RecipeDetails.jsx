@@ -20,6 +20,8 @@ const RecipeDetails = () => {
             })
     }, [])
 
+    console.log(typeof recipe.instructions)
+
     return (
         <div>
         <div className='photoBanner' 
@@ -53,7 +55,7 @@ const RecipeDetails = () => {
             <div className="rightSide">
                 <h2>Instructions</h2>
                 <p style={{ whiteSpace: "pre-wrap" }}>
-                    {recipe.instructions && JSON.parse(recipe.instructions)}
+                    {recipe.instructions}
                 </p>
             </div>
         </main>
